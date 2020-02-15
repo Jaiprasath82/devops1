@@ -1,0 +1,52 @@
+## LOCAL TO REMOTE ##
+
+  1. git init local_repo1
+  2. Create a file in local_repo1
+  3. git add <FILE NAME>
+       (OR)
+     git add -A
+  4. git commit -m "msg"
+  5. Create remote repository at GitHub
+  6. git push --set-upstream <GIT REPO URL FROM GITHUB> master
+
+
+## CHECKOUT WITH FILE ##
+
+  1. create a file in local repo, add, commit.
+  2. append the same file
+  3. if you dont like the changes and want to continue with old commit.
+      #git checkout <FILE NAME>
+   [NOTE: the checkout changes canoot be undo]
+
+#git clean -df >> removes untracked files from working directory.
+
+#git rm --cached q1  >> remove the files from staging area back to working directory.
+
+#git log
+#git log --oneline
+#git reset --soft <COMMIT_SHA>
+#git reset --mixed <COMMIT_SHA>
+#git reset --hard <COMMIT_SHA>
+
+=========================================================
+
+## BRANCHING ##
+
+#git checkout -b <BRANCH NAME>  -->> create and switch to the new branch.
+
+#git branch <BRANCH NAME>  -->> create new branch
+
+#git checkout <BRANCH NAME>  --> switch b/w branches
+
+#git branch  -->> list all branches
+   (OR)
+ git branch -a  -->> list all branches
+
+#git branch -d <BRANCH NAME> -->> To delete the branch
+=================================================================
+
+## MERGING ##
+
+#git merge <BRANCH NAME>  -->> to merge the changes(commits) made in branch to master.
+
+
