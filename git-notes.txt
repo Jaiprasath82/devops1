@@ -49,4 +49,4 @@
 
 #git merge <BRANCH NAME>  -->> to merge the changes(commits) made in branch to master.
 
-
+#git rebase 
